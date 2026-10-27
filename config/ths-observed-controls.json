@@ -1,0 +1,23 @@
+{
+  "status": "observed_only_not_an_execution_adapter",
+  "broker": "Galaxy (user stated; identity not verified programmatically)",
+  "process": "xiadan.exe",
+  "required_page_labels": ["资金余额", "可用金额", "可取金额", "股票市值"],
+  "funds": {
+    "cash_balance": {"label": "资金余额", "label_id": 2388, "value_id": 1012},
+    "frozen_cash": {"label": "冻结金额", "label_id": 1686, "value_id": 1013},
+    "available_cash": {"label": "可用金额", "label_id": 2005, "value_id": 1016},
+    "withdrawable_cash": {"label": "可取金额", "label_id": 3004, "value_id": 1017},
+    "stock_market_value": {"label": "股票市值", "label_id": 1335, "value_id": 1014},
+    "position_pnl": {"label": "持仓盈亏", "label_id": 2345, "value_id": 1027},
+    "daily_pnl": {"label": "当日盈亏", "label_id": 2347, "value_id": 1026}
+  },
+  "positions_grid": {"class": "CVirtualGridCtrl", "control_id": 1047, "uia_patterns": [], "uia_child_count": 0},
+  "live_orders_enabled": false,
+  "notes": [
+    "Resolve live process and handles each run; do not reuse observed handles or PID.",
+    "Control IDs alone do not identify a page; verify labels, scope, visibility and uniqueness.",
+    "Revalidate after client updates. Static values have been read only to establish numeric shape; exact financial values are not retained.",
+    "Grid UIA metadata does not establish a method for reading holdings."
+  ]
+}
